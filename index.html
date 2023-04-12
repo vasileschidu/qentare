@@ -19,7 +19,7 @@
           <img class="h-10 w-auto" src="src/img/PAD-LOGO.svg" alt="">
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <div class="flex sm:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -27,29 +27,22 @@
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
 
-      
+
+      <div class="block md:flex lg:gap-x-12">
         <div class="relative">
 
-          <button type="button" class="inline-flex items-center gap-x-2 rounded-full bg-indigo-600 py-4 px-6 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+          
+
+          <button type="button" class="inline-flex group items-center gap-x-2 rounded-full bg-indigo-600 py-4 px-6 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             Products
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>            
           </button>
           
-            <!--
-              Flyout menu, show/hide based on flyout menu state.
-          
-              Entering: "transition ease-out duration-200"
-                From: "opacity-0 translate-y-1"
-                To: "opacity-100 translate-y-0"
-              Leaving: "transition ease-in duration-150"
-                From: "opacity-100 translate-y-0"
-                To: "opacity-0 translate-y-1"
-            -->
-            <div class="absolute -right-4 z-10 mt-4 flex w-screen max-w-max  px-4">
+  
+            <div class="hidden absolute -right-4 z-10 group-focus:block mt-4 flex w-screen max-w-max  px-4">
               <div class="w-screen gap-3 max-w-md flex-auto overflow-hidden rounded-3xl bg-gray-900/70 backdrop-blur-md text-sm leading-6 shadow-2xl ring-1 ring-gray-800">
                 <div class="p-4 flex-col gap-4">
 
@@ -62,7 +55,7 @@
                         PAD's DEX
                         <span class="absolute inset-0"></span>
                       </a>
-                      <p class="mt-1 text-gray-400">Your Safe Haven in the Wild West of Crypto</p>
+                      <p class="mt-1 text-gray-400">Buy, sell, and provide liquidity for the best projects on Aurora. </p>
                     </div>
                   </div>
 
@@ -75,7 +68,7 @@
                         Launchpad
                         <span class="absolute inset-0"></span>
                       </a>
-                      <p class="mt-1 text-gray-400">Where Innovation Meets Opportunity</p>
+                      <p class="mt-1 text-gray-400">Support the latest and innovative projects.</p>
                     </div>
                   </div>
           
@@ -91,61 +84,86 @@
 
                         <span class="absolute inset-0"></span>
                       </div>
-                      <p class="mt-1 text-gray-600">Your One-Stop Shop for the Best Deals in DeFi</p>
+                      <p class="mt-1 text-gray-600">Instantly swap with the best rates on Aurora. </p>
                     </div>
                   </div>
           
-              
                 </div>
               </div>
             </div>
-          </div>
         </div>
+      </div>
       
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="hidden" role="dialog" aria-modal="true">
+    <div class="block sm:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="src/img/PAD-LOGO.svg" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-300">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
 
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
 
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+          <div class="mt-10 flex-col gap-20 divide-ydivide-gray-500/10">
+            
+                  <div class="group  relative flex  gap-2 rounded-2xl p-4 bg-gray-950/40 ">
+                    <div class="mt-1 flex h-16 w-16 flex-none  rounded-lg">
+                      <img class="h-12 w-auto" src="src/img/dex-icon.svg" alt="" width="56px" height="56px" >
+                    </div>
+                      <div>
+                          <a href="#" class="font-semibold text-gray-100">
+                            PAD's DEX
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    <p class="mt-1 text-gray-400">Buy, sell, and provide liquidity for the best projects on Aurora. </p>
+                    </div>
+                  </div>
 
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-            </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-            </div>
+                  <div class="group mt-4 relative flex gap-2 rounded-2xl p-4 bg-gray-950/40 ">
+
+                    <div class="mt-1 flex h-16 w-16 flex-none rounded-lg">
+                      <img class="h-12 w-auto" src="src/img/launchpad-icon.svg" alt="" width="56px" height="56px" >
+                    </div>
+                    <div>
+                      <a href="#" class="font-semibold text-gray-100">
+                        Launchpad
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-400">Support the latest and innovative projects.</p>
+                    </div>
+                  </div>
+          
+        
+                  <div class="group mt-4 relative flex gap-2 rounded-2xl p-4 bg-gray-800/40">
+                    <div class="mt-1 flex h-16 w-16 flex-none  rounded-lg">
+                      <img class="h-12 w-auto" src="src/img/dex-agg-icon.svg" alt="" width="56px" height="56px" >
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-500">
+                        DEX Aggregator
+                        <span class="inline-flex items-center rounded-full bg-indigo-600/20 ml-2 px-2.5 py-0.5 text-xs font-medium text-indigo-300">Coming soon</span>
+
+                        <span class="absolute inset-0"></span>
+                      </div>
+                      <p class="mt-1 text-gray-600">Instantly swap with the best rates on Aurora. </p>
+                    </div>
+                  </div>
           </div>
-        </div>
       </div>
     </div>
   </header>
       <main>
 
-
-
-
-
-        
         <!-- Hero section -->
         <div class="relative isolate overflow-hidden">
           <svg class="absolute  inset-0  h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -184,8 +202,8 @@
                 </a>
               </div>
 
-              <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Experience the Future of Finance with PAD.fi</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-300">Your all-in-one platform for decentralized exchange, launchpad, and DEX aggregator on the NEAR ecosystem, empowering you to trade, invest, and innovate in the future of finance.</p>
+              <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">The DeFi hub of the NEAR ecosystem</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-300">Pad is your all-in-one platform for discovering new projects, buying, and selling crypto with the best rates in the NEAR & Aurora ecosystem. Dive into innovative projects on the launchpad. </p>
               <!-- <div class="mt-10 flex items-center gap-x-6">
                 <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
                 <a href="#" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
@@ -211,7 +229,7 @@
 
         <div class="bg-gray-900 pb-24 pt-12 sm:pt-10">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-lg font-semibold leading-8 text-white">Building the ecosystem to bootstrap innovations together</h2>
+            <h2 class="text-center text-lg font-semibold leading-8 text-white">Building the ecosystem to bootstrap innovations together.</h2>
 
             <div class="mt-10 overflow-visible grid grid-cols-2 gap-2 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-4">
               <div class="bg-white/5 p-8 sm:p-10 sm:rounded-lg">
@@ -256,9 +274,9 @@
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div class="lg:pr-8 lg:pt-4">
                 <div class="lg:max-w-lg">
-                  <h2 class="text-base font-semibold leading-7 text-indigo-400">Enter the PAD.fi Hub</h2>
-                  <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Discover the power of decentralized finance</p>
-                  <p class="mt-6 text-lg leading-8 text-gray-300">A new world of possibilities for your investments with PAD.fi, where you can trade, invest, and innovate with confidence and ease.</p>
+                  <h2 class="text-base font-semibold leading-7 text-indigo-400">Enter PAD</h2>
+                  <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Platform for Advancement & Disruption</p>
+                  <p class="mt-6 text-lg leading-8 text-gray-300">Navigate the boundless opportunities on Aurora through a secure, fast, user-friendly DeFi Hub.</p>
                   <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                     <div class="relative pl-9">
                       <dt class="inline font-semibold text-white">
@@ -267,7 +285,7 @@
                         </svg>
                         Security.
                       </dt>
-                      <dd class="inline">We prioritize security at PAD.fi and leverage the NEAR blockchain to provide a high level of security and transparency to our users.</dd>
+                      <dd class="inline">Users always control their private keys and the smart contracts they interact with, ensuring that no third-party mediates any interaction. </dd>
                     </div>
         
                     <div class="relative pl-9">
@@ -277,7 +295,7 @@
                         </svg>
                         Speed.
                       </dt>
-                      <dd class="inline">We understand the importance of speed in DeFi, which is why we chose NEAR as our blockchain.</dd>
+                      <dd class="inline">A second can make all the difference in DeFi. This is why we’ve designed Pad to be fast and responsive.</dd>
                     </div>
         
                     <div class="relative pl-9">
@@ -288,7 +306,7 @@
                         </svg>
                         Access.
                       </dt>
-                      <dd class="inline">We believe that DeFi should be accessible to everyone, regardless of their level of experience or expertise.</dd>
+                      <dd class="inline ">Unlocking the next wave of DeFi users needs platforms that cater to the needs of everyone regardless of their level of experience or expertise.</dd>
                     </div>
                   </dl>
                 </div>
@@ -312,24 +330,24 @@
 
         <div class="bg-gray-900 py-24 sm:py-32">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          
             <div class="mx-auto max-w-4xl text-center">
-              <h2 class="text-base font-semibold leading-7 text-indigo-400">PAD.FI Product</h2>
-              <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Revolutionize Your Trading and Launches with PAD.fi</p>
+              <h2 class="text-base font-semibold leading-7 text-indigo-400">PAD Products</h2>
+              <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Everything you need in one place</p>
             </div>
             <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">Trade confidently on our secure decentralized exchange, launch your next big idea on our decentralized launchpad, and stay ahead of the game for more.</p>
             
-            <div class="isolate mx-auto mt-20 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              <div class="rounded-3xl p-8 xl:p-10 bg-white/5 ring-2 ring-indigo-500">
+            <div class="isolate mx-auto mt-32 grid max-w-md grid-cols-1 gap-24 lg:mx-0 lg:max-w-none lg:gap-8 lg:grid-cols-3">
+              <div class="rounded-3xl shadow-3xl p-8 xl:p-10 bg-white/5 ">
                 <div class="-mt-24 flex h-40 w-40 flex-none items-center justify-center rounded-lg">
                   <img class="h-40 w-auto" src="src/img/dex-icon.svg" alt="" width="56px" height="56px" >
                 </div>
                 <div class="flex pt-4 items-center justify-between gap-x-4">
                   <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">PAD's DEX</h3>
                 </div>
-                <p class="mt-4 text-sm leading-6 text-gray-500">Trade your favorite cryptocurrencies with confidence on PAD.fi's decentralized exchange. Our platform prioritizes security and transparency, giving you complete control over your assets.</p>
-                
-                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Get started</a>
-              
+                <p class="mt-4 text-base leading-6 text-gray-300">Buy, sell, and provide liquidity for the best projects on Aurora.</p>
+                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500">Go to app</a>
+  
               </div>
 
               <div class="rounded-3xl p-8 xl:p-10 bg-white/5 ring-2 ring-indigo-500">
@@ -339,9 +357,9 @@
                 <div class="flex pt-4 items-center justify-between gap-x-4">
                   <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">Launchpad</h3>
                 </div>
-                <p class="mt-4 text-sm leading-6 text-gray-500">PAD.fi's launchpad provides a secure and decentralized way for new projects to raise funds and launch their products. We carefully vet projects to ensure only the best get access to our platform.</p>
+                <p class="mt-4 text-base leading-6 text-gray-300">Support the latest and innovative projects.</p>
                 
-                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Get started</a>
+                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500">Go to app</a>
               
               </div>
 
@@ -352,15 +370,13 @@
                 <div class="flex pt-4 items-center justify-between gap-x-4">
                   <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">DEX Aggregator</h3>
                 </div>
-                <p class="mt-4 text-sm leading-6 text-gray-500">PAD.fi's DEX aggregator provides access to multiple decentralized exchanges, offering the best prices and liquidity for your trades. Stay ahead of the game with our one-stop shop for DeFi deals.</p>
+                <p class="mt-4 text-base leading-6 text-gray-500">Instantly swap with the best rates on Aurora.</p>
+
                 
-                <div aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-gray-500 focus-visible:outline-white">Comming soon</div>
+                <div aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 bg-white/10 text-gray-500 ">Comming soon</div>
+
               
-              </div>
-        
-              
-        
-              
+              </div>           
             </div>
           </div>
         </div>
@@ -373,105 +389,14 @@
   
         
     
-        <!-- Feature section
-        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-          <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-base font-semibold leading-7 text-indigo-400">Why us?</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Everything you need to deploy your app</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
-          </div>
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-white">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                    </svg>
-                  </div>
-                  Server monitoring
-                </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p class="flex-auto">Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.</p>
-                  <p class="mt-6">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                  </p>
-                </dd>
-              </div>
+    
+       
+    
 
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-white">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                    </svg>
-                  </div>
-                  Collaborate
-                </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p class="flex-auto">Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.</p>
-                  <p class="mt-6">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                  </p>
-                </dd>
-              </div>
-    
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-white">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-                    </svg>
-                  </div>
-                  Task scheduling
-                </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.</p>
-                  <p class="mt-6">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                  </p>
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-     -->
-        
-    
-        <!-- Stats
-        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-            <h2 class="text-base font-semibold leading-8 text-indigo-400">Our track record</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Trusted by thousands of developers&nbsp;worldwide</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-          </div>
-          <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-              <dt class="text-sm leading-6">Developers on the platform</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight">8,000+</dd>
-            </div>
-    
-            <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-              <dt class="text-sm leading-6">Daily requests</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight">900m+</dd>
-            </div>
-    
-            <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-              <dt class="text-sm leading-6">Uptime guarantee</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight">99.9%</dd>
-            </div>
-    
-            <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-              <dt class="text-sm leading-6">Projects deployed</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight">12m</dd>
-            </div>
-          </dl>
-        </div>
-     -->
 
-     
         <!-- CTA section -->
-        <div class="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
+        <div class="relative isolate mt-32 px-6 py-16 sm:mt-24 sm:py-20 lg:px-8">
+          <!-- <iframe class="absolute inset-0 -z-10 h-full w-full" src='https://my.spline.design/padfirefinedherocopycopy-8331d44cb672af79b9720be64183024b/' frameborder='0' width='100%' height='100%'></iframe> -->
           <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
             <defs>
               <pattern id="1d4240dd-898f-445f-932d-e2872fd12de3" width="200" height="100" x="50%" y="0" patternUnits="userSpaceOnUse">
@@ -495,20 +420,15 @@
             </svg>
           </div>
 
-              <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
-                <div class="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
-                  <h2 class="inline sm:block lg:inline xl:block">Want product news and updates?</h2>
-                  <p class="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
-                </div>
-                <form class="w-full max-w-md lg:col-span-5 lg:pt-2">
-                  <div class="flex gap-x-4">
-                    <label for="email-address" class="sr-only">Email address</label>
-                    <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
-                    <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
-                  </div>
-                  <p class="mt-4 text-sm leading-6 text-gray-300">We care about your data. Read our <a href="#" class="font-semibold text-white">privacy&nbsp;policy</a>.</p>
-                </form>
-              </div>
+          <div class="mx-auto max-w-7xl grid grid px-6 py-24 sm:py-24 lg:px-8">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Bootstrap your innovations.<br>Start using our products today.</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">PAD helps developers to deliver innovations at scale, while enabling users to experience developments that scale within their needs.</p>
+
+            <div class="mt-10 flex items-center gap-x-6">
+              <a href="#" class="rounded-full bg-indigo-600 px-4 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-300">Learn more <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
         </div>
       </main>
     
@@ -553,14 +473,15 @@
                 </svg>
               </a>
             </div>
-            <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+            <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2023 PAD Finance, Inc. All rights reserved.</p>
           </div>
         </div>
       </footer>
     </div>
     
     
-    
+  
     
   </body>
 </html>
+
